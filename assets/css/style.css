@@ -897,8 +897,13 @@ h6 {
   font-weight: 500;
   margin-bottom: 3px;
   color: #112D63;
-  text-align: justify;
+  /* text-align: justify; */
   font-family: "montserrat", "Raleway", sans-serif;
+}
+
+#cv-speakers .description p {
+
+  text-align: justify;
 }
 
 #cv-speakers div .title .name {
@@ -910,7 +915,7 @@ h6 {
   font-weight: 500;
   margin-bottom: 3px;
   color: #112D63;
-  text-align: justify;
+  /* text-align: justify; */
   font-family: "montserrat", "Raleway", sans-serif;
 }
 
