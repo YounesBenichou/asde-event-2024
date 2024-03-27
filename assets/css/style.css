@@ -892,6 +892,19 @@ h6 {
   /* margin-bottom: 30px; */
 }
 
+#cv-speakers div .title p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: #112D63;
+  text-align: justify;
+  font-family: "montserrat", "Raleway", sans-serif;
+}
+
+#cv-speakers div .title .name {
+  font-size: 15px;
+  font-weight: 700;
+}
 #cv-speakers p{
   font-size: 17px;
   font-weight: 500;
