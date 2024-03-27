@@ -743,6 +743,18 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Hands on Section
+--------------------------------------------------------------*/
+#hands-on p, #hands-on li {
+  font-size: 17px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  color: #112D63;
+  text-align: justify;
+  font-family: "montserrat", "Raleway", sans-serif;
+
+}
+/*--------------------------------------------------------------
 # Speakers Section
 --------------------------------------------------------------*/
 #speakers {
