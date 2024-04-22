@@ -752,7 +752,26 @@ h6 {
   color: #112D63;
   text-align: justify;
   font-family: "montserrat", "Raleway", sans-serif;
+}
 
+
+#hands-on .insrire { 
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+}
+#hands-on a {
+  /* border: none; */
+  justify-self: center;
+  margin-top: 30px;
+  width: fit-content;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #0E1B4D;
+  padding: 10px 100px;
+  border: solid 2px #0E1B4D;
 }
 /*--------------------------------------------------------------
 # Speakers Section
@@ -1533,6 +1552,7 @@ h6 {
 
 #buy-tickets .card ul li {
   margin-bottom: 20px;
+  height: 50px;
 }
 
 #buy-tickets .card .text-muted {
