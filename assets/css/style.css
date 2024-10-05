@@ -9,6 +9,14 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+:root {
+  --primary-color: #ff2c2c;
+  --primary-color-black : #ff2c2c;
+  --text-color : #111522;
+  
+}
+
 body {
   background: #fff;
   color: #2f3138;
@@ -32,6 +40,7 @@ a:focus {
 p {
   padding: 0;
   margin: 0 0 30px 0;
+  color: #111522;
 }
 
 h1,
@@ -44,7 +53,7 @@ h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
-  color: #0e1b4d;
+  color: var(--primary-color);
 }
 
 .main-page {
@@ -73,7 +82,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0E1B4D;
+  background: var(--primary-color);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -110,7 +119,7 @@ h6 {
   display: block;
   width: 60px;
   height: 5px;
-  background: #112D63;
+  background: var(--primary-color-black);
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -129,7 +138,7 @@ h6 {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
-  color: #9195a2;
+  color: #ff7187;
 }
 
 .section-with-bg {
@@ -147,12 +156,12 @@ h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-  background: rgba(6, 12, 34, 0.98);
+  background: rgba(239, 61, 61, 0.9);
 }
 
 #header.header-scrolled,
 #header.header-inner {
-  background: rgba(6, 12, 34, 0.98);
+  background: rgba(239, 61, 61, 0.9);
   height: 70px;
 }
 
@@ -166,7 +175,7 @@ h6 {
 }
 
 #header #logo h1 span {
-  color: #0E1B4D;
+  color: var(--primary-color);
 }
 
 #header #logo h1 a,
@@ -253,7 +262,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgba(202, 206, 221, 0.8);
+  color: #fff;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -329,7 +338,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #0E1B4D;
+  color: var(--text-color);
 }
 
 .navbar .dropdown:hover>ul {
@@ -434,7 +443,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #0E1B4D;
+  color: var(--primary-color);
 }
 
 .navbar-mobile .getstarted,
@@ -469,7 +478,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #0E1B4D;
+  color: var(--primary-color);
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -496,8 +505,8 @@ h6 {
 
 #hero:before {
   content: "";
-  /* background: rgba(6, 12, 34, 0.8); */
-  background: #112D63;
+  background: rgba(6, 12, 34, 0.8);
+  /* background: var(--primary-color); */
   opacity: 0.65;
   position: absolute;
   bottom: 0;
@@ -552,7 +561,7 @@ h6 {
 
 #hero .endo-digest p{
   background-color: #fff;
-  color: #112D63;
+  color: var(--primary-color-black);
   font-size: 30px;
   font-weight: 800px;
   padding: 10px 22px 10px 22px;
@@ -568,7 +577,7 @@ h6 {
 #hero .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#0E1B4D 50%, rgba(101, 111, 150, 0.15) 52%);
+  background: radial-gradient(var(--primary-color) 50%, rgba(101, 111, 150, 0.15) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -609,7 +618,7 @@ h6 {
 }
 
 #hero .play-btn:hover::after {
-  border-left: 15px solid #0E1B4D;
+  border-left: 15px solid var(--primary-color);
   transform: scale(20);
 }
 
@@ -685,7 +694,7 @@ h6 {
 
 #about:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: rgba(239, 61, 61, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -736,7 +745,7 @@ h6 {
   font-size: 17px;
   margin-bottom: 25px;
   font-weight: 500;
-  color: #112D63;
+  color: var(--text-color);
   text-align: justify;
   font-family: "montserrat", "Raleway", sans-serif;
 
@@ -749,7 +758,7 @@ h6 {
   font-size: 17px;
   margin-bottom: 25px;
   font-weight: 500;
-  color: #112D63;
+  color: var(--text-color);
   text-align: justify;
   font-family: "montserrat", "Raleway", sans-serif;
 }
@@ -769,9 +778,9 @@ h6 {
   border-radius: 50px;
   font-weight: 600;
   background-color: #fff;
-  color: #0E1B4D;
+  color: var(--text-color);
   padding: 10px 100px;
-  border: solid 2px #0E1B4D;
+  border: solid 2px var(--text-color);
 }
 /*--------------------------------------------------------------
 # Speakers Section
@@ -839,7 +848,7 @@ h6 {
 }
 
 #speakers .speaker .details a:hover {
-  color: #0E1B4D;
+  color: var(--text-color);
 }
 
 #speakers .speaker:hover .details {
@@ -876,7 +885,7 @@ h6 {
 }
 
 #speakers-details .details .social a:hover {
-  background: #0E1B4D;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -927,7 +936,7 @@ h6 {
   font-size: 12px;
   font-weight: 500;
   margin-bottom: 3px;
-  color: #112D63;
+  color: var(--primary-color-black);
   /* text-align: justify; */
   font-family: "montserrat", "Raleway", sans-serif;
 }
@@ -945,7 +954,7 @@ h6 {
   font-size: 17px;
   font-weight: 500;
   margin-bottom: 3px;
-  color: #112D63;
+  color: var(--primary-color-black);
   /* text-align: justify; */
   font-family: "montserrat", "Raleway", sans-serif;
 }
@@ -954,7 +963,7 @@ h6 {
   font-size: 17px;
   font-weight: 500;
   margin-bottom: 3px;
-  color: #112D63;
+  color: var(--primary-color-black);
   text-align: justify;
   font-family: "montserrat", "Raleway", sans-serif;
 }
@@ -984,9 +993,9 @@ h6 {
   border-radius: 50px;
   font-weight: 600;
   background-color: #fff;
-  color: #0E1B4D;
+  color: var(--text-color);
   padding: 10px 100px;
-  border: solid 2px #0E1B4D;
+  border: solid 2px var(--text-color);
 }
 
 @media (max-width: 991px) {
@@ -1008,7 +1017,7 @@ h6 {
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #0E1B4D;
+  background-color: var(--primary-color);
   color: #fff;
   
 }
@@ -1189,7 +1198,7 @@ h6 {
 }
 
 #venue .venue-info {
-  background: url("../img/palais-0.jpeg") top center no-repeat;
+  background: url("../img/Hotel\ Liberte.png") top center no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 60px;
@@ -1281,7 +1290,7 @@ h6 {
 }
 
 #hotels a:hover {
-  color: #0E1B4D;
+  color: var(--primary-color);
 }
 
 #hotels .stars {
@@ -1319,11 +1328,11 @@ h6 {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #0E1B4D;
+  border: 1px solid var(--primary-color);
 }
 
 #gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0E1B4D;
+  background-color: var(--primary-color);
 }
 
 #gallery .swiper-slide-active {
@@ -1336,7 +1345,7 @@ h6 {
   }
 
   #gallery .swiper-slide-active {
-    /* border: 5px solid #0E1B4D; */
+    /* border: 5px solid var(--primary-color); */
     padding: 4px;
     background: #fff;
     z-index: 1;
@@ -1401,13 +1410,13 @@ h6 {
 #faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: #0E1B4D;
+  font-family: var(--primary-color);
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
-  color: #0E1B4D;
+  color: var(--primary-color);
   transition: 0.3s;
 }
 
@@ -1432,7 +1441,7 @@ h6 {
 }
 
 #faq .faq-list .collapsed:hover {
-  color: #0E1B4D;
+  color: var(--primary-color);
 }
 
 #faq .faq-list .collapsed .icon-show {
@@ -1498,7 +1507,7 @@ h6 {
   border: 0;
   padding: 9px 25px;
   cursor: pointer;
-  background: #0E1B4D;
+  background: var(--primary-color);
   color: #fff;
   transition: all 0.3s ease;
   outline: none;
@@ -1564,7 +1573,7 @@ h6 {
   border-radius: 50px;
   padding: 10px 25px;
   transition: all 0.2s;
-  background-color: #0E1B4D;
+  background-color: var(--primary-color);
   border: 0;
   color: #fff;
 }
@@ -1580,7 +1589,7 @@ h6 {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #0E1B4D;
+  background-color: var(--primary-color);
   border: 0;
   color: #fff;
 }
@@ -1605,13 +1614,13 @@ h6 {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #0E1B4D;
+  color: var(--text-color);
 }
 
 #contact .contact-info address,
 #contact .contact-info p {
   margin-bottom: 0;
-  color: #0E1B4D;
+  color: var(--text-color);
 }
 
 #contact .contact-info h3 {
@@ -1619,15 +1628,15 @@ h6 {
   margin-bottom: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #0E1B4D;
+  color: var(--text-color);
 }
 
 #contact .contact-info a {
-  color: #0E1B4D;
+  color: var(--text-color);
 }
 
 #contact .contact-info a:hover {
-  color: #0E1B4D;
+  color: var(--text-color);
 }
 
 #contact .contact-address,
@@ -1655,7 +1664,7 @@ h6 {
 #contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #0E1B4D;
+  background: var(--primary-color);
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1702,7 +1711,7 @@ h6 {
 
 #contact .php-email-form input:focus,
 #contact .php-email-form textarea:focus {
-  border-color: #0E1B4D;
+  border-color: var(--primary-color);
 }
 
 #contact .php-email-form input {
@@ -1714,7 +1723,7 @@ h6 {
 }
 
 #contact .php-email-form button[type=submit] {
-  background: #0E1B4D;
+  background: var(--primary-color);
   border: 0;
   padding: 10px 40px;
   color: #fff;
@@ -1800,7 +1809,7 @@ h6 {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #0E1B4D;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -1811,7 +1820,7 @@ h6 {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
-  border-bottom: 2px solid #0E1B4D;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 #footer .footer-top .footer-links {
@@ -1826,7 +1835,7 @@ h6 {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
-  color: #0E1B4D;
+  color: var(--text-color);
   font-size: 18px;
 }
 
@@ -1844,7 +1853,7 @@ h6 {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #0E1B4D;
+  color: var(--primary-color);
 }
 
 #footer .footer-top .footer-contact {
@@ -1866,7 +1875,7 @@ h6 {
 }
 
 #footer .footer-top .footer-newsletter input[type=submit] {
-  background: #0E1B4D;
+  background: var(--primary-color);
   border: 0;
   width: 35%;
   padding: 6px 0;
