@@ -505,7 +505,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(6, 12, 34, 0.8);
+  background: rgba(17, 22, 41, 1);
   /* background: var(--primary-color); */
   opacity: 0.65;
   position: absolute;
