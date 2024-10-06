@@ -764,13 +764,13 @@ h6 {
 }
 
 
-#hands-on .insrire { 
+#hands-on .insrire , #schedule .insrire{ 
   width: 100%;
   /* background-color: red; */
   display: flex;
   justify-content: center;
 }
-#hands-on a {
+#hands-on a, #schedule a {
   /* border: none; */
   justify-self: center;
   margin-top: 30px;
