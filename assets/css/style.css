@@ -779,6 +779,7 @@ h6 {
   /* background-color: red; */
   display: flex;
   justify-content: center;
+
 }
 #hands-on a, #schedule a {
   /* border: none; */
@@ -787,10 +788,10 @@ h6 {
   width: fit-content;
   border-radius: 50px;
   font-weight: 600;
-  background-color: #fff;
-  color: var(--text-color);
+  background-color: var(--primary-color);
+  color: #fff;
   padding: 10px 100px;
-  border: solid 2px var(--text-color);
+  /* border: solid 2px var(--text-color); */
 }
 /*--------------------------------------------------------------
 # Speakers Section
