@@ -11,8 +11,9 @@
 --------------------------------------------------------------*/
 
 :root {
-  --primary-color: #ff2c2c;
-  --primary-color-black : #ff2c2c;
+  --primary-color: #FF991c;
+  --primary-color-black : #FF991c;
+  --background-black-color: #111522;
   --text-color : #111522;
   
 }
@@ -96,7 +97,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #f94a6a;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -104,6 +105,7 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
+
 
 /* Sections Header
 --------------------------------*/
@@ -138,7 +140,7 @@ h6 {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
-  color: #ff7187;
+  color: var(--primary-color);
 }
 
 .section-with-bg {
@@ -156,12 +158,16 @@ h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-  background: rgba(239, 61, 61, 0.9);
+  /* background: rgba(239, 61, 61, 0.9); */
+  background-color: var(--primary-color);
+  opacity: 0.8;
 }
 
 #header.header-scrolled,
 #header.header-inner {
-  background: rgba(239, 61, 61, 0.9);
+  /* background: rgba(239, 61, 61, 0.9); */
+  background-color: var(--primary-color);
+  opacity: 0.9;
   height: 70px;
 }
 
@@ -186,7 +192,7 @@ h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
-  max-height: 90px;
+  max-height: 70px;
 }
 
 @media (max-width: 992px) {
@@ -652,7 +658,8 @@ h6 {
   margin: 10px;
   color: #fff;
   animation-delay: 0.8s;
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
+  background-color: var(--primary-color);
 }
 
 #hero .about-btn:hover {
@@ -694,7 +701,10 @@ h6 {
 
 #about:before {
   content: "";
-  background: rgba(239, 61, 61, 0.8);
+  /* background: rgba(239, 61, 61, 0.8);
+   */
+  background-color: var(--primary-color);
+  opacity: 0.9;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1198,7 +1208,7 @@ h6 {
 }
 
 #venue .venue-info {
-  background: url("../img/Hotel\ Liberte.png") top center no-repeat;
+  background: url("../img/park-mall-hotel-conference.jpg") top center no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 60px;
@@ -1733,7 +1743,7 @@ h6 {
 }
 
 #contact .php-email-form button[type=submit]:hover {
-  background: #e0072f;
+  background: var(--primary-color);
 }
 
 @keyframes animate-loading {
@@ -1886,7 +1896,7 @@ h6 {
 }
 
 #footer .footer-top .footer-newsletter input[type=submit]:hover {
-  background: #e0072f;
+  background: var(--primary-color);
 }
 
 #footer .copyright {
